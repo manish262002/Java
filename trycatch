@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TryCatch {
+    public static void main(String[] args) {
+        Scanner my= new Scanner(System.in);
+        int[] arr ={2,4,6,8};
+        try{
+            System.out.println("Enter the value: ");
+            int key=my.nextInt();
+            System.out.println(arr[key]);
+        }catch (ArrayIndexOutOfBoundsException err)
+        {
+            System.out.println(err);
+        }
+        finally {
+            System.out.println("This will be Correct");
+        }
+    }
+}
