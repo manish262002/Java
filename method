@@ -1,0 +1,25 @@
+public class method {
+        method(int a, int b){
+            System.out.println(a+b);
+        }
+        void print(){
+            System.out.println("helo");
+        }
+        void name(){
+            System.out.println("mass");
+        }
+        int add(){
+            return 10+2;
+        }
+        void multiple(int a, int b){
+            System.out.println(a*b);
+        }
+        public static void main(String[] args) {
+            int c=4,d=5;
+            method obj = new method(c,d);
+            obj.print();
+            obj.name();
+            System.out.println(obj.add());
+            obj.multiple(3,5);
+    }
+}
