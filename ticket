@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ticket {
+    public  static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int ticket= inp.nextInt();
+        if(ticket >= 1 && ticket <= 10){
+            System.out.println("The price is 100");
+        } else if (ticket >= 11 && ticket <= 20) {
+            System.out.println("The price is 200");
+        }
+        else if(ticket >= 21 && ticket <= 30){
+            System.out.println("The price is 300");
+        }
+        else{
+            System.out.println("Bye moneeyy");
+        }
+    }
+}
